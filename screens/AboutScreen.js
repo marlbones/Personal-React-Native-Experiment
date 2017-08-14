@@ -15,11 +15,9 @@ export default class AboutScreen extends Component{
   };
   render() {
     return (
-        <ScrollView>
-          <View style={styles.container}>
-            <Text style={styles.instructions}>HEllololol</Text>
-          </View>
-        </ScrollView>
+      <View style={styles.container}>
+        <Text style={styles.instructions}>CA Alumni Finder lets you look up your favourite student and see what they're up to now. All rights reserved.</Text>
+      </View>
     );
   }
 }
@@ -28,13 +26,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 200,
     paddingLeft: 30,
     paddingRight: 30,
+    backgroundColor: '#94baf7',
   },
   instructions: {
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
+    marginTop: -200,
   },
 });

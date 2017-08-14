@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import { StackNavigator} from 'react-navigation';
 import AboutScreen from './screens/AboutScreen.js';
+import Search from './components/Search';
 
 export default class HomeScreen extends Component {
   static navigationOptions = {
@@ -26,6 +27,9 @@ export default class HomeScreen extends Component {
         <Text style={styles.welcome}>
           Coder Academy Alumni Finder
         </Text>
+        <View style={styles.searchContainer}>
+          <Search />
+        </View>
         <Button onPress={() => navigate('About')}
                 title="About"
                 style={styles.butt} //Buttons don't have a style prop and can't be styled. TouchableOpacity might be a good alternative
@@ -50,7 +54,7 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    marginTop: -350,
+    marginTop: -200,
     marginBottom: 20,
   },
   instructions: {
@@ -60,6 +64,9 @@ const styles = StyleSheet.create({
   },
   butt: {
     marginTop: 200,
+  },
+  searchContainer: {
+    marginTop: -90
   }
 });
 
