@@ -30,10 +30,11 @@ export default class HomeScreen extends Component {
         <View style={styles.searchContainer}>
           <Search />
         </View>
-        <Button onPress={() => navigate('About')}
-                title="About"
-                style={styles.butt} //Buttons don't have a style prop and can't be styled. TouchableOpacity might be a good alternative
-                color="#115dd8"/>
+        <View style={styles.buttonContainer}>
+          <Button onPress={() => navigate('About')}
+                  title="About"
+                  color="#115dd8"/>
+        </View>
       </View>
     );
   }
@@ -62,8 +63,8 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-  butt: {
-    marginTop: 200,
+  buttonContainer: {
+    marginTop: 50,
   },
   searchContainer: {
     marginTop: -90
