@@ -22,7 +22,7 @@ export default class Search extends Component {
             <Button
                onPress={() => {}}
                color='#115dd8'
-               title='Go'/>
+               title='Search'/>
           </View>
       </View>
     );
@@ -32,7 +32,7 @@ export default class Search extends Component {
 const styles = StyleSheet.create({
   description: {
     marginBottom: 20,
-    fontSize: 16,
+    fontSize: 18,
     textAlign: 'center',
     color: '#656565'
   },
