@@ -10,7 +10,8 @@ import {
   StyleSheet,
   Text,
   View,
-  Button
+  Button,
+  ScrollView
 } from 'react-native';
 import { StackNavigator} from 'react-navigation';
 import AboutScreen from './screens/AboutScreen.js';

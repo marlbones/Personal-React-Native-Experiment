@@ -13,13 +13,17 @@ export default class Search extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.description}>
-          Search your favourite ex-CA student.
-        </Text>
-        <View style={styles.flowRight}>
-          <TextInput style={styles.searchInput}
-                     placeholder='Search via name'/>
-        </View>
+          <Text style={styles.description}>
+            Search your favourite ex-CA student.
+          </Text>
+          <View style={styles.flowRight}>
+            <TextInput style={styles.searchInput}
+                       placeholder='Search via name'/>
+            <Button
+               onPress={() => {}}
+               color='#115dd8'
+               title='Go'/>
+          </View>
       </View>
     );
   }
@@ -47,10 +51,10 @@ const styles = StyleSheet.create({
   padding: 4,
   marginRight: 5,
   flexGrow: 1,
-  fontSize: 18,
+  fontSize: 16,
   borderWidth: 1,
-  borderColor: '#48BBEC',
+  borderColor: '#115dd8',
   borderRadius: 8,
-  color: '#48BBEC',
+  color: '#115dd8',
 },
 });
